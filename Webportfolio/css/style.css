@@ -1,31 +1,51 @@
+:root{
+    --clr-buttons: rgb(100, 100, 100);
+	--clr-shadow: black;
+	--clr-border: #045FB4;
+    --clr-background: #CEE3F6;
+    --clr-body-background: #CEE3F6;
+}
+
 /* body */
 body {
-	background: #CEE3F6;
+	background: var(--clr-body-background);
+	margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
 }
 
 /* header */
 header {
+	font-size: 2em;
 	text-align: center;
 	background: white;
-    border: 0.5em solid #045FB4;
+    border: 0.5em solid var(--clr-border);
 	border-radius: 0.5em;
-	margin: 1em 0;
-	box-shadow: 0 0 0 1pt black;
+	margin: 0 0 1rem 0;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
 
 /* nav */
 ul {
+	display: flex;
+	justify-content: space-evenly;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #045FB4;
+	background-color: var(--clr-border);
 	border-radius: 0.5em;
-	box-shadow: 0 0 0 1pt black;
-}
-
-li {
-	float: left;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
 
 li a {
@@ -33,7 +53,6 @@ li a {
 	color: white;
 	text-align: center;
 	padding: 1em;
-	margin: 0 1em;
 	text-decoration: none;
 	border-radius: 0.5em;
 }
@@ -45,32 +64,34 @@ li a:hover {
 
 /* main */
 .main {
+	display: flex;
+	justify-content: space-evenly;
 	padding: 1em;
-    border: 0.5em solid #045FB4;
+    border: 0.5em solid var(--clr-border);
 	border-radius: 0.5em;
 	margin: 1em auto;
 	background: #EFF5FB;
-	box-shadow: 0 0 0 1pt black;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
 
 /* section */
 .content {
 	width: 50%;
 	height: 50em;
-    border: 0.5em solid #045FB4;
+    border: 0.5em solid var(--clr-border);
 	border-radius: none;
 	background: white;
-	box-shadow: 0 0 0 1pt black;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
 
 /* sidebar */
 .sidebar {
 	width: 50%;
 	height: 50em;
-    border: 0.5em solid #045FB4;
+    border: 0.5em solid var(--clr-border);
 	border-radius: none;
 	background: white;
-	box-shadow: 0 0 0 1pt black;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
 
 /* sidebar img */
@@ -78,31 +99,31 @@ li a:hover {
 	margin: 1em;
 	border-radius: 50%;
 	width: 50%;
-	box-shadow: 0 0 0 1pt black;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
 
 /* p */
 p {	
 	padding: 0;
-	margin: 1em;
+	margin: 0.5em;
 }
 
 /* h1 */
 h1 {
 	padding: 0;
-	margin: 1em;
+	margin: 0.5em;
 }
 
 /* h2 */
 h2 {
 	padding: 0;
-	margin: 1em;
+	margin: 0.5em;
 }
 
 /* footer */
-footer {
-    border: 0.5em solid #045FB4;
+.footer {
+    border: 0.5em solid var(--clr-border);
 	border-radius: 0.5em;
 	background: white;
-	box-shadow: 0 0 0 1pt black;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
 }
