@@ -47,7 +47,7 @@ header {
 	flex-direction: column;
 	list-style-type: none;
 	margin: 0 1em;
-	padding: 0;
+	padding: 1em 1em 0 0;
 	background-color: var(--clr-background-secondary);
 	border: 0.1rem solid var(--clr-border);
 	box-shadow: 0.4rem 0.3rem 0.3rem var(--clr-shadow);
@@ -65,7 +65,7 @@ header {
 	background-color: rgb(140, 190, 255);
 	color: var(--clr-text-primary);
 	padding: 1em;
-	margin: 1em;
+	margin: 0 0 1em 1em;
 	text-decoration: none;
 	border: 0.1rem solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
@@ -94,7 +94,7 @@ header {
 		flex: 1;
 	}
 	.page__nav li a{
-		margin: 1em;
+		margin: 0 0 1em 1em;
 	}
 }
 
