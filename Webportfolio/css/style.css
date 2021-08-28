@@ -43,6 +43,8 @@ header {
 }
 
 .page__nav ul {
+	display: flex;
+	flex-direction: column;
 	list-style-type: none;
 	margin: 0 1em;
 	padding: 0;
@@ -85,65 +87,65 @@ header {
 	}
 	.page__nav ul {
 		display: flex;
+		flex-direction: row;
 		justify-content: flex-start;
 	}
 	.page__nav li{
-		flex: 1 1 0;
+		flex: 1;
 	}
 	.page__nav li a{
 		margin: 1em;
 	}
 }
 
-/* main */
-.main {
+/* row */
+.row {
 	padding: 1em;
 	margin: 0;
 }
 
-/* section */
-.content {
-	width: 100%;
-	height: 60em;
+/* side */
+.side {
+	flex: 30%;
+	height: 50em;
 	margin: 0 0 1em 0;
 	background-color: var(--clr-background-secondary);
 	border: 0.1em solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
 }
 
-/* sidebar */
-.sidebar {
-	width: 100%;
-	height: auto;
+/* side img */
+.side img {
+	margin: 1em;
+	border-radius: 0%;
+	width: 30%;
+	box-shadow: 0 0 0 0.1em var(--clr-shadow);
+}
+
+/* main */
+.main {
+	flex: 70%;
+	height: 50em;
 	margin: 1em 0 0 0;
 	background-color: var(--clr-background-secondary);
 	border: 0.1em solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
 }
 
-/* sidebar img */
-.sidebar img {
-	margin: 1em;
-	border-radius: 50%;
-	width: 50%;
-	box-shadow: 0 0 0 0.1em var(--clr-shadow);
-}
-
 @media screen and (min-width: 700px) {
-	.main{
+	.row{
 		display: flex;
-		align-items: stretch;
 	}
-	.content{
-		width: 70%;
+	.side{
+		flex: 30%;
 		margin: 0 0.5em 0 0;
 	}
-	.sidebar{
-		width: 30%;
-		margin: 0 0 0 0.5em;
+	.side img{
+		width: 80%;
 	}
-	.sidebar img{
-		width: 50%;
+	.main{
+		flex: 70%;
+		margin: 0 0 0 0.5em;
 	}
 }
 
@@ -167,6 +169,7 @@ h2 {
 
 /* footer */
 .footer {
+	text-align: right;
 	padding: 1em;
 	margin: 0 1em 1em 1em;
 	background-color: var(--clr-background-secondary);
