@@ -85,9 +85,10 @@ header {
 	}
 	.page__nav ul {
 		display: flex;
+		justify-content: flex-start;
 	}
 	.page__nav li{
-		flex: 1;
+		flex: 1 1 0;
 	}
 	.page__nav li a{
 		margin: 1em;
