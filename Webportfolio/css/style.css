@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
 :root{
 	--clr-shadow: rgb(0, 0, 0);
 	--clr-border: rgb(0, 0, 0);
@@ -124,7 +126,7 @@ header {
 	display: block;
 	margin: auto;
 	width: calc(100% - 1em);
-	max-width: 40%;
+	max-width: 45%;
 	max-height:100%;
 	margin: 0 0.5em 0 0.5em;
 	border-radius: 1%;
@@ -202,3 +204,66 @@ h2 {
 	border: 0.1rem solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
 }
+
+/* .weather {
+	/* display: block;
+	height: 20rem;
+	width: 100%;
+	margin: 0.5em;
+	padding: 1em 0;
+	border-radius: 1%; 
+	display: block;
+	margin: auto;
+	width: calc(100% - 1em);
+	height: 30rem;
+	max-width: 100%;
+	max-height:100%;
+	margin: 0.5em;
+	border-radius: 1%;
+	text-align: center;
+	background-image: var(--clr-background-image);
+	border: 0.1rem solid var(--clr-border);
+  } */
+
+  .weather__container {
+	  text-align: center;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  flex-direction: column;
+	  margin: 0 0.5em 0.5em 0.5em;
+	  width: calc(100% - 1em);
+	  max-height: 100%;
+	  max-width: 100%;
+	  border-radius: 1%;
+	  background-image: var(--clr-background-image);
+	  border: 0.1rem solid var(--clr-border);
+  }
+
+  .weather {
+	display: flex; 
+	align-items: center;
+	margin: 0.5em 0;
+  }
+
+  #location {
+	font-size: 3rem;
+  }
+  .desc {
+	font-size: 1rem;
+	text-transform: capitalize;
+  }
+
+  .circle {
+	background-color: black;
+	border-radius: 50%;
+	height: 1em;
+	width: 1em;
+	margin: 0 1em;
+  }
+
+  @media screen and (min-width: 768px) {
+	  .weather__container{
+		  max-width: 45%;
+	  }
+  }
