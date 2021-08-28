@@ -119,16 +119,31 @@ header {
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
 }
 
-/* side img */
-.side img {
+/* myself img */
+.myself__img img {
 	display: block;
 	margin: auto;
 	width: calc(100% - 1em);
-	max-width: 50%;
+	max-width: 40%;
 	max-height:100%;
 	margin: 0 0.5em 0 0.5em;
 	border-radius: 1%;
 	box-shadow: 0 0 0 0.1em var(--clr-shadow);
+}
+
+/* socialmedia img */
+.socialmedia__img{
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 0.5em 0.5em;
+}
+
+.socialmedia__img img{
+	display: block;
+	width: 65px;
+	padding: 0 0.5em 0 0;
+	border: none;
+	box-shadow: none;
 }
 
 /* main */
@@ -148,7 +163,10 @@ header {
 		flex: 30%;
 		margin: 0 0.5em 0 0;
 	}
-	.side img{
+	.myself__img img{
+		max-width: 100%;
+	}
+	.socialmedia__img img{
 		max-width: 100%;
 	}
 	.main{
