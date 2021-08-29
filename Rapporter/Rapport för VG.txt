@@ -1,0 +1,5 @@
+För VG så har jag på min sida gjort anrop till ett API för en väder app. 
+Anropet gör jag i min script fil till openweathermap.org som sedan hämtar hem väder, grader,
+tid för soluppgång/solnedgång.
+Jag hämtar väder data för aktuell position som läses av från webbläsaren.
+Samma sak här, vet inte riktigt mer vad jag ska tillägga. Tycker det är ganska uppenbart vad som händer i script filen.

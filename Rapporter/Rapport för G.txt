@@ -1,0 +1,4 @@
+För att felsöka min webbsida så har jag använt mig utav dev tools i både firefox och chrome.
+Har även kollat sidan för responsivitet med hjälp utav responsivt läge i firefox.
+Använde dev tools console för att kolla så mitt script läses in som det ska genom att sätta värden.
+Vet inte riktigt vad mer jag ska tillägga, det är väll de jag använt mig utav helt enkelt.
