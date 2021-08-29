@@ -35,7 +35,7 @@ img{
 }
 
 /* header */
-header {
+.header {
 	background-image: var(--clr-background-image);
 	margin: 1rem;
 	font-size: 3rem;
@@ -84,12 +84,12 @@ header {
 
 .page__nav li a:hover {
 	background-color: #a4410d;
-	color: var(--clr-text-secondary)
+	color: var(--clr-text-secondary);
 }
 
 .page__nav li a:active {
 	background-color: #5d2507;
-	color: var(--clr-text-secondary)
+	color: var(--clr-text-secondary);
 }
 
 @media screen and (min-width: 768px) {
@@ -120,6 +120,7 @@ header {
 .side {
 	flex: 100%;
 	margin: 0 0 1em 0;
+	padding: 0.5em;
 	background-color: var(--clr-background-secondary);
 	border: 0.1em solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
@@ -157,7 +158,7 @@ header {
 }
 
 .socialmedia__img img:hover{
-	margin: 0 0.5em 0 0;
+	margin: 0 0.5em -0.5em 0;
 	padding: 0;
 }
 
@@ -165,6 +166,7 @@ header {
 .main {
 	flex: 100%;
 	margin: 1em 0 0 0;
+	padding: 0.5em;
 	background-color: var(--clr-background-secondary);
 	border: 0.1em solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
@@ -262,7 +264,7 @@ h2 {
 /* footer */
 .footer {
 	text-align: right;
-	padding: 1em;
+	padding: 0.5em;
 	margin: 0 1em 1em 1em;
 	background-color: var(--clr-background-secondary);
 	border: 0.1rem solid var(--clr-border);
