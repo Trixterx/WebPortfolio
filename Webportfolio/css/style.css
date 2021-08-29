@@ -72,7 +72,7 @@ header {
 	font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
-	background-color: #eb1595;
+	background-color: #fa9459;
 	color: var(--clr-text-primary);
 	padding: 1rem;
 	margin: 0 0 1rem 1rem;
@@ -82,12 +82,12 @@ header {
 }
 
 .page__nav li a:hover {
-	background-color: #327bc0;
+	background-color: #b90000;
 	color: var(--clr-text-secondary);
 }
 
 .page__nav li a:active {
-	background-color: #144e85;
+	background-color: #ff0000;
 	color: var(--clr-text-secondary);
 }
 
@@ -237,7 +237,7 @@ h2 {
 }
 
 #location {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 .desc {
 	font-size: 1rem;
