@@ -38,6 +38,7 @@ img{
 header {
 	margin: 1rem;
 	font-size: 2rem;
+	padding: 4rem;
 	text-align: center;
 	background-color: var(--clr-background-secondary);
 	border: 0.1rem solid var(--clr-border);
@@ -68,12 +69,13 @@ header {
 
 .page__nav li a {
 	display: block;
+	font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
-	background-color: rgb(140, 190, 255);
+	background-color: #eb1595;
 	color: var(--clr-text-primary);
-	padding: 1em;
-	margin: 0 0 1em 1em;
+	padding: 1rem;
+	margin: 0 0 1rem 1rem;
 	text-decoration: none;
 	border: 0.1rem solid var(--clr-border);
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
@@ -91,7 +93,7 @@ header {
 
 @media screen and (min-width: 768px) {
 	.page__nav {
-	  padding: 0;
+		padding: 0;
 	}
 	.page__nav ul {
 		display: flex;
@@ -102,12 +104,13 @@ header {
 		flex: 1;
 	}
 	.page__nav li a{
-		margin: 0 0 1em 1em;
+		margin: 0 0 1rem 1rem;
 	}
 }
 
 /* row */
 .row {
+	text-align: center;
 	padding: 1em;
 	margin: 0;
 }
@@ -121,6 +124,10 @@ header {
 	box-shadow: 0.4em 0.3em 0.3em var(--clr-shadow);
 }
 
+.myself__img{
+	display: flex;
+	justify-content: center;
+}
 /* myself img */
 .myself__img img {
 	display: block;
@@ -136,6 +143,7 @@ header {
 .socialmedia__img{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	margin: 0 0 0.5em 0.5em;
 }
 
@@ -164,13 +172,20 @@ header {
 @media screen and (min-width: 768px) {
 	.row{
 		display: flex;
+		text-align: left;
 	}
 	.side{
 		flex: 30%;
 		margin: 0 0.5em 0 0;
 	}
+	.myself__img{
+		justify-content: left;
+	}
 	.myself__img img{
-		max-width: 100%;
+		max-width: 50%;
+	}
+	.socialmedia__img{
+		justify-content: left;
 	}
 	.socialmedia__img img{
 		max-width: 100%;
@@ -183,6 +198,7 @@ header {
 
 /* p */
 p {	
+	font-size: 1.1rem;
 	padding: 0;
 	margin: 0.5rem;
 }
@@ -238,7 +254,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
 	.weather__container{
-		max-width: 45%;
+		max-width: 50%;
 	}
 }
 
