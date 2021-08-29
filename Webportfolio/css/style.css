@@ -4,7 +4,7 @@
 	--clr-shadow: rgb(0, 0, 0);
 	--clr-border: rgb(0, 0, 0);
     --clr-background-primary: #CEE3F6;
-    --clr-background-image: linear-gradient(to top, #cee3f6, #aad0f3, #85bdf1, #5ba9ee, #1296eb);
+    --clr-background-image: linear-gradient(to top, #cee3f6, #add2f3, #89c1f1, #5fb1ee, #12a0eb);
 	--clr-background-secondary: rgb(255, 255, 255);
 	--clr-text-primary: rgb(0, 0, 0);
 	--clr-text-secondary: rgb(255, 255, 255);
@@ -20,7 +20,7 @@ body {
 	margin: 0;
     padding: 0;
 	color: var(--clr-text-primary);
-	background-image: var(--clr-background-image);
+	background-color: var(--clr-background-primary);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -36,8 +36,9 @@ img{
 
 /* header */
 header {
+	background-image: var(--clr-background-image);
 	margin: 1rem;
-	font-size: 2rem;
+	font-size: 3rem;
 	padding: 4rem;
 	text-align: center;
 	background-color: var(--clr-background-secondary);
@@ -72,7 +73,7 @@ header {
 	font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
-	background-color: #fa9459;
+	background-color: #eb5d12;
 	color: var(--clr-text-primary);
 	padding: 1rem;
 	margin: 0 0 1rem 1rem;
@@ -82,13 +83,13 @@ header {
 }
 
 .page__nav li a:hover {
-	background-color: #b90000;
-	color: var(--clr-text-secondary);
+	background-color: #a4410d;
+	color: var(--clr-text-secondary)
 }
 
 .page__nav li a:active {
-	background-color: #ff0000;
-	color: var(--clr-text-secondary);
+	background-color: #5d2507;
+	color: var(--clr-text-secondary)
 }
 
 @media screen and (min-width: 768px) {
