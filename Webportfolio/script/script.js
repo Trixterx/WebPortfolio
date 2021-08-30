@@ -1,5 +1,5 @@
 // Openweathermap API.
-const api = 'b9d56e64790b9b5b45f3165c072e6eea';
+const api = ''; // @Björn! Tar bort denna så den inte ligger live på mitt github konto. Säg till om du behöver den.
 
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
